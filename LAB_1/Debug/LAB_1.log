@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (TEST.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  main.cpp
+c:\users\даша\desktop\cpp_labs\lab_1\lab_1\lab_1\main.cpp(104): warning C4838: преобразование из "unsigned int" в "int" требует сужающего преобразования
+  LAB_1.vcxproj -> C:\Users\Даша\Desktop\CPP_LABS\LAB_1\LAB_1\Debug\LAB_1.exe
