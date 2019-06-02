@@ -98,19 +98,21 @@ int main() {
 
 	printf("Testing... \n");
 
-	int testDataA[] = { -3,  2,  1,  0,   1,  2,  3, };
-	int testDataB[] = { 7,  6,  5,  4,   3,  2,  1, -10, -4 };
-	int testDataC[] = { 3, 56, 18, -7, 247,  0, -1, };
-	int testDataD[] = { 0xDEADBEEF, };
-	int testDataE[] = { 1,  2,  3 };
-	int testDataF[] = { 7,  8,  7,  8,   7,  8,  7,   8, 7, 8, 7, 8, 7, 8 };
+	int* testEmpty        = NULL;
+	int  testOneItem   [] = { 0xDEADBEEF,                                };
+	int  testDescending[] = { -3,  2,   1,  0,   1,       2,  3,         };
+	int  testAscendng  [] = {  1,  2,   3,  4,   5,       6,  7          };
+	int  testRandomA   [] = {  7,  6, 334,  4,   3,  231010,  1, -10, -4 };
+	int  testRandomB   [] = {  3, 56,  18, -7, 247,       0, -1,         };
+	int  testSame      [] = {  7,  7,   7,  7,   7,       7,  7          };
 
-	sort(testDataA, sizeof(testDataA) / sizeof(int)); printf("TEST A : %s.\n", isAscending(testDataA, sizeof(testDataA) / sizeof(int)) ? "OK" : "FAIL");
-	sort(testDataB, sizeof(testDataB) / sizeof(int)); printf("TEST B : %s.\n", isAscending(testDataB, sizeof(testDataB) / sizeof(int)) ? "OK" : "FAIL");
-	sort(testDataC, sizeof(testDataC) / sizeof(int)); printf("TEST C : %s.\n", isAscending(testDataC, sizeof(testDataC) / sizeof(int)) ? "OK" : "FAIL");
-	sort(testDataD, sizeof(testDataD) / sizeof(int)); printf("TEST D : %s.\n", isAscending(testDataD, sizeof(testDataD) / sizeof(int)) ? "OK" : "FAIL");
-	sort(testDataE, sizeof(testDataE) / sizeof(int)); printf("TEST E : %s.\n", isAscending(testDataE, sizeof(testDataE) / sizeof(int)) ? "OK" : "FAIL");
-	sort(testDataF, sizeof(testDataF) / sizeof(int)); printf("TEST F : %s.\n", isAscending(testDataF, sizeof(testDataF) / sizeof(int)) ? "OK" : "FAIL");
+	sort(testEmpty     , 0                                   ); printf("Empty      : %s.\n", isAscending(testEmpty     , 0                                   ) ? "OK" : "FAIL");
+	sort(testOneItem   , sizeof(testOneItem   ) / sizeof(int)); printf("One Item   : %s.\n", isAscending(testOneItem   , sizeof(testOneItem   ) / sizeof(int)) ? "OK" : "FAIL");
+	sort(testDescending, sizeof(testDescending) / sizeof(int)); printf("Descending : %s.\n", isAscending(testDescending, sizeof(testDescending) / sizeof(int)) ? "OK" : "FAIL");
+	sort(testAscendng  , sizeof(testAscendng  ) / sizeof(int)); printf("Ascendng   : %s.\n", isAscending(testAscendng  , sizeof(testAscendng  ) / sizeof(int)) ? "OK" : "FAIL");
+	sort(testRandomA   , sizeof(testRandomA   ) / sizeof(int)); printf("RandomA    : %s.\n", isAscending(testRandomA   , sizeof(testRandomA   ) / sizeof(int)) ? "OK" : "FAIL");
+	sort(testRandomB   , sizeof(testRandomB   ) / sizeof(int)); printf("RandomB    : %s.\n", isAscending(testRandomB   , sizeof(testRandomB   ) / sizeof(int)) ? "OK" : "FAIL");
+	sort(testSame      , sizeof(testSame      ) / sizeof(int)); printf("Same       : %s.\n", isAscending(testSame      , sizeof(testSame      ) / sizeof(int)) ? "OK" : "FAIL");
 
 	printf("Testing OK\n");
 

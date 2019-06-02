@@ -1,4 +1,4 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (TEST.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (TEST.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   main.cpp
-c:\users\даша\desktop\cpp_labs\lab_1\lab_1\lab_1\main.cpp(104): warning C4838: преобразование из "unsigned int" в "int" требует сужающего преобразования
-  LAB_1.vcxproj -> C:\Users\Даша\Desktop\CPP_LABS\LAB_1\LAB_1\Debug\LAB_1.exe
+E:\Work\LEVINA_CPP_LABS\LAB_1\LAB_1\LAB_1\main.cpp(102,28): warning C4838:  conversion from 'unsigned int' to 'int' requires a narrowing conversion
+  LAB_1.vcxproj -> E:\Work\LEVINA_CPP_LABS\LAB_1\LAB_1\Debug\LAB_1.exe
